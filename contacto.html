@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ficha Personal UADE</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="https://images.seeklogo.com/logo-png/50/1/universidad-argentina-de-la-empresa-logo-png_seeklogo-509881.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="titulo">Ficha Personal</h1>
+            <button class="hamburger" id="hamburger-menu" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="toggle-dark-mode" class="dark-mode-toggle" aria-label="Alternar modo oscuro">🌙</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <section class="contacto-section">
+                <h2>Formulario de Contacto</h2>
+                <p class="descripcion">Complete el siguiente formulario para ponerse en contacto conmigo:</p>
+                
+                <form id="contacto-form" class="contacto-form" novalidate>
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <span class="error-message" id="error-nombre"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="error-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                        <span class="error-message" id="error-telefono"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                        <span class="error-message" id="error-asunto"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <span class="error-message" id="error-mensaje"></span>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="button" id="limpiar-btn" class="btn btn-limpiar">Limpiar</button>
+                        <button type="submit" class="btn btn-enviar">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo-uade">
+                    <img src="https://images.seeklogo.com/logo-png/50/1/universidad-argentina-de-la-empresa-logo-png_seeklogo-509881.png" alt="Logo UADE" class="logo">
+                </div>
+                <div class="derechos">
+                    <p>&copy; Todos los derechos reservados.</p>
+                </div>
+                <div class="repositorio">
+                    <a href="https://github.com/tu-usuario/tp-parcial1" target="_blank" class="btn btn-repo">
+                        Ver Repositorio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

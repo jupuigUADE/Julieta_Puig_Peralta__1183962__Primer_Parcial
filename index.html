@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha Personal - UADE</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="shortcut icon"
+      href="https://images.seeklogo.com/logo-png/50/1/universidad-argentina-de-la-empresa-logo-png_seeklogo-509881.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="titulo">Ficha Personal</h1>
+        <button
+          class="hamburger"
+          id="hamburger-menu"
+          aria-label="Menú de navegación"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">Inicio</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+        <button
+          id="toggle-dark-mode"
+          class="dark-mode-toggle"
+          aria-label="Alternar modo oscuro"
+        >
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h2 class="h2">Julieta Puig Peralta</h2>
+        <section class="perfil-section">
+          <div class="perfil-content">
+            <div class="info-grid">
+              <div class="info-item">
+                <label for="legajo"><strong>Legajo: </strong></label>
+                <span id="legajo" class="info-subitem">1183962</span>
+              </div>
+              <div class="info-item">
+                <label for="carrera"><strong>Carrera: </strong></label>
+                <span id="carrera" class="info-subitem"
+                  >Licenciatura en Sistemas de Información</span
+                >
+              </div>
+
+              <div class="info-item">
+                <label for="materia"><strong>Materia: </strong></label>
+                <span id="materia" class="info-subitem"
+                  >Diseño y desarrollo web</span
+                >
+              </div>
+              <div class="info-item">
+                <label for="curso"><strong>Curso: </strong></label>
+                <span id="curso" class="info-subitem">Jueves Turno Tarde</span>
+              </div>
+            </div>
+            <div class="foto-container">
+              <img
+                src="imagenes/fotoCarnet.jpeg"
+                alt="Foto personal de Julieta Puig Peralta"
+                class="foto-personal"
+              />
+            </div>
+          </div>
+        </section>
+        <div class="botones-container">
+          <a
+            href="https://jupuiguade.github.io/ConceptBA_TP_Individual/"
+            target="_blank"
+          >
+            <button class="btn btn-comercial">Local Comercial</button>
+          </a>
+          <a
+            href="https://jupuiguade.github.io/fanPageCSS/#inicio"
+            target="_blank"
+          >
+            <button class="btn btn-fanpage">Fan Page</button>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo-uade">
+            <img
+              src="https://images.seeklogo.com/logo-png/50/1/universidad-argentina-de-la-empresa-logo-png_seeklogo-509881.png"
+              alt="Logo UADE"
+              class="logo"
+            />
+          </div>
+          <div class="derechos">
+            <p>&copy; Todos los derechos reservados.</p>
+          </div>
+          <div class="repositorio">
+            <a
+              href="https://github.com/jupuigUADE/Julieta_Puig_Peralta__1183962__Primer_Parcial"
+              target="_blank"
+              class="btn btn-repo"
+            >
+              Ver Repositorio
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
